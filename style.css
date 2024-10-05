@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+}
+
+.img {
+  width: 200px;
+  height: 70px;
+  margin: 0 350px;
+}
+.content button{
+  position: relative;
+  left: 900px;
+  margin-top: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid ;
+}
+.content h1{
+  padding-top: 250px;
+  text-align: center;
+  font-size: 80px;
+}
+.content p{
+  text-align: center;
+}
+.content {
+  width: 100%;
+  color: #fff;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+  background-image: url("background.jpg");
+}
+
+main {
+  background-color: #cac8c448;
+  text-align: center;
+  height: 250px;
+  padding: 50px 0;
+}
+
+.UU {
+  margin: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+b {
+  font-size: 22px;
+}
+img  {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.image-gallery{
+  text-align: center;
+  background-color: #cac8c448;
+}
+.image-gallery h2{
+  line-height: 5;
+  font-size: 30px;
+}
+.image-gallery img{
+  position: relative;
+  left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  width: 325px;
+  height: 220px;
+  border-radius: 20px;
+  transition: .3S;
+}
+.image-gallery img:hover{
+  opacity: 0.7;
+}
+
+form{
+  width: 100%;
+  text-align: center;
+  height: 450px;
+  padding-top: 20px ;
+  background-image: 
+    linear-gradient(to bottom, #4e61b6c7, #1f1d22de), /* تدرج لوني */
+    url("road.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+}form h1{
+  color: #fff;
+}
+table {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+td {
+  width: 100%;
+  text-align: center; 
+  margin: 10px 0; 
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  position: relative;
+  left: 60px;
+  width: 100%; 
+  color: #fff;
+  padding: 10px; 
+  border: none; 
+  outline: none;
+  margin: 10px 0;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid hsla(0, 0%, 100%, 0.379);
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.186);
+}
+input[type="submit"]{
+  position: relative;
+  left: -35px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.479);
+  padding:10px 30px;
+}
+input[type="checkbox"]{
+  position: relative;
+  left: -50px;
+}
+span{
+  position: relative;
+  left: -40px;
+  color: #fff;
+}
+input[type="submit"]:hover,
+.content button:hover {
+  
+  border: 2px solid #1f1d22;
+  transition: all 0.3s ease; 
+}
+.image-gallery img:hover {
+  opacity: 0.7;
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+form:hover {
+  background-position: center; /* تأثير على الخلفية */
+}
+footer .dd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  right: 80px;
+  bottom: 10px;
+  gap: 20px; 
+}
+
+i {
+  background-color: #0073ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%; 
+  transition: .5s;
+}
+footer p{
+  position: relative;
+  top: 15px;
+  left: 80px;
+}
+footer i:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #0073ff;
+  cursor: pointer;
+}
+/* Responsive Design for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 60px;
+    padding-top: 150px;
+  }
+
+  .content button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .img {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .UU {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+
+  .UU p {
+    margin-bottom: 20px;
+  }
+
+  .image-gallery img {
+    width: 250px;
+    height: 180px;
+  }
+}
+
+/* للهواتف الصغيرة */
+@media only screen and (max-width: 600px) {
+  .img {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto; /* اجعل الصورة في المنتصف */
+  }
+
+  .content h1 {
+    font-size: 50px; /* تصغير حجم النص */
+  }
+
+  .content button {
+    left: 50%;
+    transform: translateX(-50%); /* اجعل الزر في المنتصف */
+    font-size: 14px;
+  }
+
+  .UU {
+    flex-direction: column; /* تغيير التوزيع إلى عمودي */
+    margin: 50px 20px; /* تقليل المسافات */
+  }
+
+  .UU p {
+    margin-bottom: 20px; /* مسافات بين الفقرات */
+  }
+
+  .image-gallery img {
+    width: 100%; /* اجعل الصور بعرض كامل الشاشة */
+    height: auto;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  footer .dd {
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    gap: 10px;
+  }
+
+  footer p {
+    text-align: center;
+    left: 0;
+  }
+}
+
+
+
